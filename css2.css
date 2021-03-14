@@ -1,0 +1,115 @@
+html {
+	background-color: #FFD2E0;
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit
+}
+
+body {
+	font-family: 'Shippori Mincho B1', serif;;
+	font-size: 100%;
+}
+
+.container {
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #FFF;
+	padding-left: 45px;
+	padding-right: 45px;
+}
+
+.header {
+	padding-top: 30px;
+	color: #F25151;
+}
+
+.header-title {
+	margin: 0;
+	font-weight: bold;
+	font-size: 185%;
+}
+
+.header-slogan {
+	margin: 0;
+}
+
+.nav {
+	margin-top: 25px;
+}
+
+.nav-list {
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+.nav-sublist {
+	position: absolute;
+	background-color: #FFDDDE;
+	margin: 0;
+	padding: 0;
+	display: none;
+}
+
+.nav-list-item {
+	list-style: none;
+	margin-right: 6px;
+}
+
+.nav-list-item-link {
+	display: block;
+	color: #F25151;
+	text-decoration: none;
+	padding: 10px 24px;
+	border: 3px solid #FFDDDE;
+	border-bottom: none;
+}
+
+.nav-list-item-link:hover {
+	}
+
+.nav-list-item:hover > .nav-list-item-link {
+	background-color: #FFDDDE;
+}
+
+.nav-sublist .nav-list-item-link:hover {
+	background-color: #FA6C6C;
+	color: #fff;
+}
+
+.nav-list-item:hover .nav-sublist{
+	display: block;
+}
+
+.content-area {
+	display: flex;
+	border-top: 3px solid #FFDDDE;
+	border-bottom: 3px solid #FFDDDE;
+}
+
+.main-area {
+	font-family: 'Shippori Mincho B1', serif;
+	width: 70%;
+	padding-right: 35px;
+}
+
+.sidebar {
+	font-family: 'Inconsolata', monospace;
+	width: 35%;
+	background-color: #FFDDDE;
+	padding: 30px 45px;
+	font-size: 90%;
+}
+
+.footer {
+	text-align: center;
+	font-size: 80%;
+	color: #FFB4B4;
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
