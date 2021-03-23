@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>JQuery</title>
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+			$('h2').css('color', 'green');
+			$('h2').css('fontSize', '40px');
+			
+		});
+
+		$(document).ready(function(){
+			$('#exercise1').css('color', 'red');
+			$('#exercise1').click(function(){
+				$('#exercise1').css('fontSize', '100px');
+			});
+		});	
+
+		$(document).ready(function(){
+			$('body').css('background', 'skyblue');
+			$('body').click(function(){
+				$('body').css('background', 'white');
+			});
+		});	
+
+		$(document).ready(function(){
+			$('#btn1').click(function(){
+				alert("Text: " + $("#test").text());
+				});
+			$('#btn2').click(function(){
+				alert("HTML: " + $("#test").html());
+				});
+			});	
+
+	</script>
+</head>
+
+<body>
+	<h2>Hi jQuery</h2>
+	<div id="exercise1">HELLO WORLD</div>
+	<div id="exercise1"><img class="img-box1" src="img/圖片.jpg"></div>
+
+	<p id="test">This is some <b>bold</b> text in a paragraph.</p>
+	<button id="btn1">Show Text</button>
+	<button id="btn2">Show HTML</button>
+</body>
+</html>	
